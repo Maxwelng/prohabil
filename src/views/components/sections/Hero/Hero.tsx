@@ -19,15 +19,19 @@ export function Hero() {
             Contabilidade que <span className="text-gold">impulsiona</span> seu negócio
           </h1>
           <p className="text-lg sm:text-xl text-gray-300 mb-8 leading-relaxed">
-            Mais de 30 anos de experiência oferecendo soluções contábeis completas para
-            empresas de todos os portes em São Paulo.
+            Atuamos lado a lado com empresas que buscam mais controle, clareza
+             e apoio contábil estratégico para tomar decisões com confiança.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="#contato">
-              <Button size="lg" className="inline-flex items-center">
+              <Button
+                size="lg"
+                className="inline-flex items-center bg-gold text-white hover:brightness-110 focus:ring-gold rounded-full px-6 py-3 font-semibold"
+              >
                 Fale Conosco
                 <ArrowRight className="ml-2" size={20} />
               </Button>
+
             </Link>
             <Link href="#servicos">
               <Button variant="outline" size="lg">

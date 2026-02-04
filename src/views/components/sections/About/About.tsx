@@ -44,18 +44,23 @@ export function About() {
           </div>
 
           <div className="relative">
-            <div className="gradient-gold rounded-3xl p-6 sm:p-8 text-white shadow-2xl">
+            <div className="bg-gold rounded-3xl p-6 sm:p-8 text-white shadow-2xl">
               <div className="space-y-4 sm:space-y-6">
                 {stats.map((stat, index) => (
                   <div key={index}>
-                    {index > 0 && <div className="h-px bg-yellow-200 mb-4 sm:mb-6" />}
-                    <div className="text-4xl sm:text-5xl font-bold mb-2">{stat.value}</div>
-                    <div className="text-sm sm:text-base text-yellow-100">{stat.label}</div>
+                    {index > 0 && <div className="h-px bg-white/40 mb-4 sm:mb-6" />}
+                    <div className="text-4xl sm:text-5xl font-bold mb-2 text-white">
+                      {stat.value}
+                    </div>
+                    <div className="text-sm sm:text-base text-white/80">
+                      {stat.label}
+                    </div>
                   </div>
                 ))}
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

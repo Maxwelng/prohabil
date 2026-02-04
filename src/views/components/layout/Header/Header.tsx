@@ -9,9 +9,11 @@ export function Header() {
     useHeaderViewModel();
 
   const navLinks = [
-    { href: '#inicio', label: 'Início' },
+    { href: '#inicio', label: 'Home' },
     { href: '#sobre', label: 'Sobre' },
     { href: '#servicos', label: 'Serviços' },
+    {href: '#areas', label: ' Áreas de atuação' },
+    { href: '#', label: 'Parceiros' },
     { href: '#contato', label: 'Contato' },
   ];
 

@@ -47,10 +47,16 @@ export function ContactForm() {
           {...register('message')}
         />
 
-        <Button type="submit" loading={isSubmitting} className="w-full" size="lg">
+        <Button
+          type="submit"
+          loading={isSubmitting}
+          className="w-full bg-gold text-white hover:brightness-110 focus:ring-gold"
+          size="lg"
+        >
           <span>Enviar Mensagem</span>
           <Send size={20} />
         </Button>
+
       </form>
     </div>
   );

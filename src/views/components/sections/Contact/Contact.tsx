@@ -69,14 +69,19 @@ export function Contact() {
               })}
             </div>
 
-            <div className="mt-8 gradient-gold text-white p-6 rounded-2xl shadow-lg">
-              <h4 className="font-bold text-lg mb-2">Horário de Atendimento</h4>
-              <p className="text-yellow-100">
+            <div className="mt-8 bg-gold text-white p-6 rounded-2xl shadow-lg">
+              <h4 className="font-heading text-white text-xl font-semibold mb-4">
+                Horário de Atendimento
+              </h4>
+
+              <p className="text-white">
                 Segunda a Sexta: 9h às 18h
                 <br />
                 Sábado: 9h às 12h
               </p>
             </div>
+
+
           </div>
 
           <div>

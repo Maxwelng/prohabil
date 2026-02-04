@@ -5,10 +5,9 @@ export const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary: 'gradient-gold text-white hover:opacity-90 focus:ring-gold',
+        primary: 'bg-gradient-to-r from-gold-light via-gold to-gold-dark text-white hover:brightness-110 focus:ring-gold',
         secondary: 'bg-gray-200 text-gray-900 hover:bg-gray-300 focus:ring-gray-400',
-        outline:
-          'border-2 border-gold text-gold hover:bg-gold hover:text-white focus:ring-gold',
+        outline: 'border-2 border-gold text-gold hover:bg-gradient-to-r hover:from-gold hover:to-gold-dark hover:text-white focus:ring-gold',
         ghost: 'hover:bg-gray-100 focus:ring-gray-400',
       },
       size: {

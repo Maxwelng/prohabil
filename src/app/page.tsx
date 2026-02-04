@@ -5,6 +5,7 @@ import { About } from '@/views/components/sections/About';
 import { Services } from '@/views/components/sections/Services';
 import { Contact } from '@/views/components/sections/Contact';
 import { LocalBusinessSchema } from '@/views/components/shared/SEO';
+import { AreasDeAtuacao } from '@/views/components/sections/Areas/Areas';
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <main>
         <Hero />
         <About />
+        <AreasDeAtuacao />
         <Services />
         <Contact />
       </main>
