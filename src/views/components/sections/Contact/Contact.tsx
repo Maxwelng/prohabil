@@ -3,19 +3,18 @@ import { MapPin, Phone, Mail } from 'lucide-react';
 
 export function Contact() {
   const contactInfo = [
-    {
-      icon: MapPin,
-      title: 'Endereço',
+    { icon: MapPin, 
+      title: 'Endereço', 
       content: (
-        <>
-          Rua Padre João, nº 444
-          <br />
-          Conjuntos 111 e 112
-          <br />
-          Penha - São Paulo - SP
-        </>
+      <a href="https://www.google.com/maps?q=Rua+Padre+João,+444,+Penha,+São+Paulo,+SP" 
+        target="_blank" rel="noopener noreferrer"
+         className="hover:underline text-gray-600" >
+           Rua Padre João, nº 444 <br /> 
+           Conjuntos 111 e 112 <br /> 
+           Penha - São Paulo - SP
+        </a>
       ),
-    },
+     },
     {
       icon: Phone,
       title: 'Telefones',
@@ -30,7 +29,7 @@ export function Contact() {
     {
       icon: Mail,
       title: 'E-mail',
-      content: 'eduardo.leal@prohabil.com.br',
+      content: 'maxnunes0711@gmail.com',
     },
   ];
 

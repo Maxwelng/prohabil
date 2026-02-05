@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { Facebook, Instagram, Linkedin } from 'lucide-react';
 
@@ -22,7 +23,17 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-gold">PROHABIL</h3>
+            {/* Logo estilizado */}
+            <Link href="#inicio" className="inline-flex items-center mb-4">
+              <Image
+                src="/logo-prohabil.svg" // coloque aqui o caminho do seu logo
+                alt="ProHabil Logo"
+                width={160}
+                height={40}
+                priority
+              />
+            </Link>
+
             <p className="text-gray-400">
               Serviços contábeis de excelência para o crescimento do seu negócio.
             </p>

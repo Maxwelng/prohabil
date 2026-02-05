@@ -21,7 +21,7 @@ export const SITE_METADATA = {
   phoneFormatted: '(11) 4329-3129',
   phoneSecondary: '+55 11 4329-3139',
   phoneSecondaryFormatted: '(11) 4329-3139',
-  email: 'eduardo.leal@prohabil.com.br',
+  email: 'maxnunes0711@gmail.com',
   whatsapp: '5511943293129',
   address: {
     street: 'Rua Padre João, 444',
