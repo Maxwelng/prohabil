@@ -1,1 +1,1 @@
-export {ComplementaryServices} from './complementaryServices';
+export {ComplementaryServices} from './ComplementaryServices';
