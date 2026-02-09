@@ -63,13 +63,7 @@ export function Header() {
         </button>
       </nav>
 
-      <div
-        className={`md:hidden bg-gray-900 border-t transform transition-all duration-300 ease-in-out
-    ${mobileMenuOpen
-            ? 'max-h-96 opacity-100 translate-y-0 pointer-events-auto'
-            : 'max-h-0 opacity-0 -translate-y-4 pointer-events-none'}
-      `}
-      >
+      <div className={`md:hidden ${isScrolled ? 'bg-white' : 'bg-gray-900'} border-t transform transition-all duration-300 ease-in-out ${mobileMenuOpen ? 'max-h-96 opacity-100 translate-y-0 pointer-events-auto' : 'max-h-0 opacity-0 -translate-y-4 pointer-events-none'} `} >
         <ul className="container mx-auto px-4 py-4 space-y-4">
           {navLinks.map((link) => (
             <li
@@ -83,7 +77,7 @@ export function Header() {
               <Link
                 href={link.href}
                 onClick={closeMobileMenu}
-                className="block text-white hover:text-gold font-medium"
+                className={`block ${isScrolled ? 'text-gray-900 hover:text-gold' : 'text-white hover:text-gold'} font-medium`}
               >
                 {link.label}
               </Link>
