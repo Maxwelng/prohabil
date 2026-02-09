@@ -64,7 +64,7 @@ export function Header() {
       </nav>
 
       <div
-        className={`md:hidden bg-white border-t transform transition-all duration-300 ease-in-out
+        className={`md:hidden bg-gray-900 border-t transform transition-all duration-300 ease-in-out
     ${mobileMenuOpen
             ? 'max-h-96 opacity-100 translate-y-0 pointer-events-auto'
             : 'max-h-0 opacity-0 -translate-y-4 pointer-events-none'}
@@ -83,7 +83,7 @@ export function Header() {
               <Link
                 href={link.href}
                 onClick={closeMobileMenu}
-                className="block text-gray-700 hover:text-gold font-medium"
+                className="block text-white hover:text-gold font-medium"
               >
                 {link.label}
               </Link>
