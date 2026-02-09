@@ -8,10 +8,10 @@ export function Hero() {
       id="inicio"
       className="relative min-h-screen flex items-center bg-gradient-to-br from-black via-gray-900 to-gray-800"
     >
-      <div className="absolute inset-0 opacity-20">
+      {/* <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 right-20 w-64 h-64 bg-gold rounded-full blur-3xl" />
         <div className="absolute bottom-20 left-20 w-96 h-96 bg-gold-dark rounded-full blur-3xl" />
-      </div>
+      </div> */}
 
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-3xl">

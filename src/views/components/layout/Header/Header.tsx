@@ -14,7 +14,7 @@ export function Header() {
     { href: '#sobre', label: 'Sobre' },
     { href: '#servicos', label: 'Serviços' },
     { href: '#areas', label: ' Áreas de atuação' },
-    { href: '#', label: 'Parceiros' },
+    //{ href: '#', label: 'Parceiros' },
     { href: '#contato', label: 'Contato' },
   ];
 
@@ -63,32 +63,34 @@ export function Header() {
         </button>
       </nav>
 
-      {mobileMenuOpen && (
-        <div className="md:hidden bg-white border-t">
-          <ul className="container mx-auto px-4 py-4 space-y-4">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  onClick={closeMobileMenu}
-                  className="block text-gray-700 hover:text-gold font-medium"
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-            <li>
-              <a
-                href="tel:1143293129"
-                className="flex items-center justify-center gap-2 gradient-gold text-white px-6 py-2 rounded-full font-medium"
+      <div
+        className={`md:hidden bg-white border-t transform transition-all duration-300 ease-in-out
+    ${mobileMenuOpen
+            ? 'max-h-96 opacity-100 translate-y-0 pointer-events-auto'
+            : 'max-h-0 opacity-0 -translate-y-4 pointer-events-none'}
+      `}
+      >
+        <ul className="container mx-auto px-4 py-4 space-y-4">
+          {navLinks.map((link) => (
+            <li
+              key={link.href}
+              className={`transition-all duration-300
+          ${mobileMenuOpen
+                  ? 'opacity-100 translate-x-0'
+                  : 'opacity-0 translate-x-4'}
+        `}
+            >
+              <Link
+                href={link.href}
+                onClick={closeMobileMenu}
+                className="block text-gray-700 hover:text-gold font-medium"
               >
-                <Phone size={18} />
-                Ligar Agora
-              </a>
+                {link.label}
+              </Link>
             </li>
-          </ul>
-        </div>
-      )}
+          ))}
+        </ul>
+      </div>
     </header>
   );
 }

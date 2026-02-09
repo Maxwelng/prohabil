@@ -9,7 +9,7 @@ export async function POST(req: Request) {
   try {
     await resend.emails.send({
       from: 'contato@seudominio.com',
-      to: 'maxnunes0711@gmail.com',
+      to: 'designgrafico.san@gmail.com',
       subject: 'Novo contato recebido',
       html: `
         <h2>Novo contato</h2>
